@@ -1,0 +1,59 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sparkle's Cat Feeding and Monitoring Homepage</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body border-info" id="profile-wrapper">
+                <img id="profile-pic" src="{% static 'images/kitty.jpeg' %}" >
+                <hr>
+                <h4>This is Kitty</h4>
+                <p>Last time it was fed: 06/04/2020 10:15 PM</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <div class="card card-body border-info" id="profile-wrapper">
+                <img id="profile-pic" src="{% static 'images/fluffy.jpeg' %}" >
+                <hr>
+                <h4>This is Fluffy</h4>
+                <p>Last time it was fed: 06/04/2020 10:40 PM</p>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body border-info">
+                    <h4>Remaining Food</h4>
+                <hr>
+                <p>80% of the container is full.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-body border-info">
+                    <h4>Remaining Battery</h4>
+                <hr>
+                <p>Battery will last for 5 hours 15 minutes.</p>
+                </div>
+            </div>
+        <br>
+    </div>
+
+
+
+</body>
+</html>
